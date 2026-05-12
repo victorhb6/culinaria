@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #fdf0e6; /* Cor pêssego clara do fundo */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.navbar {
+    background-color: white;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo-img {
+    height: 60px; 
+    width: auto;  
+    display: block;
+}
+
+
+.nav-link {
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Formulário */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    align-self: center;
+}
+
+input, select {
+    padding: 10px 15px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+/* Estilo para a linha com dois campos */
+.row {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.row .input-group {
+    width: 100%;
+    margin: 0;
+}
+
+.row input, .row select {
+    width: 100%;
+}
+
+.flex-2 { flex: 2; }
+.flex-1 { flex: 1; }
+
+.login-link {
+    margin: 15px 0;
+}
+
+.login-link a {
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Botão Cadastrar */
+.btn-cadastrar {
+    background-color: #f9d45a;
+    border: none;
+    padding: 12px 60px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 0px #e0b83a; /* Sombra sólida embaixo */
+    transition: transform 0.1s;
+    margin-top: 20px;
+}
+
+.btn-cadastrar:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0px #e0b83a;
+}
+
+/* Footer */
+.footer {
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.social-icons {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.social-icons span {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.logo-footer {
+    font-size: 22px;
+    font-weight: 800;
+}
