@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #FEF0E4;
+  color: #1f2937;
+}
+
+.topo {
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  color: #ffffff;
+}
+
+.menu-principal {
+  background: #ffffff;
+}
+
+.titulo-secao {
+  font-weight: 700;
+  color: #000000;
+  align-self: center;
+}
+
+
+.rodape {
+  background: #ffffff;
+  margin-top: 40px;
+
+}
+
+.social-icons {
+    word-spacing: 2rem;
+    cursor: pointer;
+     margin-bottom: 10px;
+}
+
+.btn-cadastrar {
+    background-color: #f9d45a;
+    border: none;
+    padding: 12px 60px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 0px #e0b83a; /* Sombra sólida embaixo */
+    transition: transform 0.1s;
+    margin-top: 20px;
+    text-align: center !important;
+}
+
+.btn-cadastrar:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0px #e0b83a;
+}
+
+.btn-cadastrar:hover{
+   background-color: #f9c108;}
+
+.form-control,
+.form-select {
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+}
+.form-label{
+    align-items: center !important;
+}
+
+.nav-link{
+    color: black !important;
+}
+.navbar-brand{    color: black !important;
+}
+.logo{
+    width: 9rem;
+    height: 4rem;
+}
+.login-link a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+  .imagem-carrossel {
+    height: 280px;
+  }
+}

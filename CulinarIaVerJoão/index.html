@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CulinariA - Criar Conta</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+        <a href="index.html">
+            <img src="img/Captura de tela 2026-05-10 130050.png" alt="CulinariA" class="logo-img">
+        </a>
+    </div>
+        <nav>
+            <a href="#" class="nav-link">Início</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-card">
+            <h2>C R I A R &nbsp; C O N T A</h2>
+
+            <form>
+                <div class="input-group">
+                    <label for="username">Nome de usuário:</label>
+                    <input type="text" id="username">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="exemplo@email.com">
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" placeholder="Digite sua senha">
+                </div>
+
+                <div class="row">
+                    <div class="input-group flex-2">
+                        <label>Possui alguma restrição alimentar?</label>
+                        <select>
+                            <option value="" disabled selected>Selecione suas restrições</option>
+                            <option value="sem-restricoes">Sem restrições</option>
+                            <option value="gluten">Sem Glúten</option>
+                            <option value="lactose">Sem Lactose</option>
+                            <option value="vegano">Vegano</option>
+                            <option value="vegetariano">Vegetariano</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group flex-1">
+                        <label>Outros (especifique):</label>
+                        <input type="text" placeholder="Digite aqui...">
+                    </div>
+                </div>
+
+                <div class="login-link">
+                    <a href="#">Já tem uma conta? <u>ENTRE AQUI</u></a>
+                </div>
+
+                <button type="submit" class="btn-cadastrar">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <span>&#120143;</span> <span>&#128247;</span> <span>&#10208;</span> </div>
+        <div class="logo" style="padding-left:850px ;">
+            <img src="img/Captura de tela 2026-05-10 130050.png" alt="CulinariA" class="logo-img">
+    </div>
+    </footer>
+
+</body>
+</html>
