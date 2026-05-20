@@ -132,6 +132,7 @@ input, select {
 
 /* Footer */
 .footer {
+    display: flex;
     padding: 30px;
     background-color: white;
     text-align: center;
