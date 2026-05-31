@@ -6,11 +6,10 @@
 }
 
 body {
-    background-color: #fdf0e6; 
+    background-color: #fdf0e6; /* Cor pêssego clara do fundo */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease-in-out, padding-right 0.3s ease-in-out; 
 }
 
 /* Header */
@@ -26,6 +25,7 @@ body {
     height: 60px; 
     width: auto;  
     display: block;
+    
 }
 
 
@@ -133,7 +133,6 @@ input, select {
 
 /* Footer */
 .footer {
-    display: flex;
     padding: 30px;
     background-color: white;
     text-align: center;
@@ -153,4 +152,7 @@ input, select {
 .logo-footer {
     font-size: 22px;
     font-weight: 800;
+}
+.logo{
+    align-self: center;
 }
