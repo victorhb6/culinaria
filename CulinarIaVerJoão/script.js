@@ -1,20 +1,62 @@
-// Captura o formulário e o parágrafo de status
-const formulario = document.getElementById('meuFormulario');
-const mensagemStatus = document.getElementById('mensagemStatus');
+const aiBtn = document.getElementById('ai-btn');
+const closeBtn = document.getElementById('close-btn');
+const chatInput = document.getElementById('chat-input');
+const chatSend = document.getElementById('chat-send');
+const chatMessages = document.getElementById('chat-messages');
 
-// Escuta o envio do formulário
-formulario.addEventListener('submit', function(evento) {
-    evento.preventDefault(); // Evita que a página recarregue
 
-    const emailDigitado = document.getElementById('email').value;
-    const senhaDigitada = document.getElementById('senha').value;
+aiBtn.addEventListener('click', () => {
+    document.body.classList.add('sidebar-aberta');
+});
 
-    // Sistema de verificação (exemplo simples de validação)
-    if (emailDigitado == "teste@gmail" && senhaDigitada == "122333") {
-        mensagemStatus.textContent = "Acesso verificado com sucesso!";
-        mensagemStatus.style.color = "orange";
-    } else {
-        mensagemStatus.textContent = "E-mail ou senha incorretos.";
-        mensagemStatus.style.color = "red";
+closeBtn.addEventListener('click',() => {
+    document.body.classList.remove('sidebar-aberta');
+});
+
+
+function appendMessage(text, sender) {
+    const messageDiv = document.createElement('div');
+    messageDiv.classList.add('message', sender);
+    
+    const textSpan = document.createElement('span');
+    textSpan.textContent = text;
+    
+    messageDiv.appendChild(textSpan);
+    chatMessages.appendChild(messageDiv);
+    
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+async function sendMessage() {
+    const messageText = chatInput.value.trim();
+    if (messageText === "") return;
+
+    appendMessage(messageText, 'user');
+    chatInput.value = ""; 
+
+    try {
+        const response = await fetch('https://stunning-orbit-wr66gq9j4qr53gvrx-8000.app.github.dev/perguntar', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ pergunta: messageText }) 
+        });
+
+        if (!response.ok) {
+            throw new Error("Erro na requisição");
+        }
+
+        const data = await response.json();
+        appendMessage(data.resposta, 'assistant');
+
+    } catch (error) {
+        console.error("Erro:", error);
+        appendMessage("Erro ao conectar com a IA. Verifique se o comando está ativo.", 'assistant');
     }
+}
+
+chatSend.addEventListener('click', sendMessage);
+chatInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') sendMessage();
 });

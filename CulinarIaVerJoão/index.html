@@ -3,81 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CulinariA - Criar Conta</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>CulinarIA - Receitas</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">
-        <a href="index.html">
-            <img src="img/Captura de tela 2026-05-10 130050.png" alt="CulinariA" class="logo-img">
-        </a>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand" href="cadastro.html">
+                <img class="img" src="imgs/Captura de tela 2026-05-10 130050.png" alt="Logo CulinarIA">
+            </a>
+            
+            <div class="flex-grow-1 mx-4">
+                <div class="input-group">
+                    <span class="input-group-text search-bar"><i class="fa-solid fa-magnifying-glass text-muted"></i></span>
+                    <input type="text" class="form-control search-bar" placeholder="Buscar por...">
+                </div>
+            </div>
+
+            <button class="btn btn-entrar px-4 shadow-sm ">
+                <i class="fa-solid fa-user me-2" ></i> ENTRAR
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h2 class="fw-bold mb-1">Receita do dia</h2>
+                    <p class="small fw-bold mb-3">Sopa Cremosa de Carne Moída e Natas</p>
+                    
+                    <div class="mb-3 text-warning ">
+                        <i class="fa-solid fa-star" style="color: rgb(255, 242, 56);"></i><i class="fa-solid fa-star" style="color: rgb(255, 242, 56);"></i><i class="fa-solid fa-star" style="color: rgb(255, 242, 56);"></i><i class="fa-solid fa-star" style="color: rgb(255, 242, 56);"></i><i class="fa-solid fa-star" style="color: rgb(255, 242, 56);"></i>
+                        <span class="text-white fw-bold small ms-1">Avaliações (102)</span>
+                    </div>
+
+                    <div class="mb-3 small">
+                        <p class="mb-1">Tempo de preparo: 20 min.</p>
+                        <p class="mb-3">Rendimento: 2 porções</p>
+                        <ul class="ps-3">
+                            <li>Fica pronta super rápido.</li>
+                            <li>Tem um sabor intenso e condimentado.</li>
+                        </ul>
+                    </div>
+
+                    <button class="btn btn-saiba-mais fw-bold">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-3">
+        <div class="d-flex align-items-center flex-wrap gap-3">
+            <span class="fw-bold me-2">Filtrar:</span>
+            <button class="filter-btn">Sem açúcar</button>
+            <button class="filter-btn">Baixo Sódio</button>
+            <button class="filter-btn">Sem Lactose</button>
+            <button class="filter-btn">Sem Glúten</button>
+            <button class="filter-btn">Frutose</button>
+        </div>
     </div>
-        <nav>
-            <a href="#" class="nav-link">Início</a>
-        </nav>
-    </header>
 
-    <main class="container">
-        <section class="form-card">
-            <h2>C R I A R &nbsp; C O N T A</h2>
-
-            <form>
-                <div class="input-group">
-                    <label for="username">Nome de usuário:</label>
-                    <input type="text" id="username">
-                </div>
-
-                <div class="input-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" placeholder="exemplo@email.com">
-                </div>
-
-                <div class="input-group">
-                    <label for="password">Senha:</label>
-                    <input type="password"   placeholder="Digite a sua senha">
-                </div>
-
-                <div class="row">
-                    <div class="input-group flex-2">
-                        <label>Possui alguma restrição alimentar?</label>
-                        <select>
-                            <option value="" disabled selected>Selecione suas restrições</option>
-                            <option value="sem-restricoes">Sem restrições</option>
-                            <option value="gluten">Sem Glúten</option>
-                            <option value="lactose">Sem Lactose</option>
-                            <option value="vegano">Vegano</option>
-                            <option value="vegetariano">Vegetariano</option>
-                        </select>
+    <section class="recipes-container">
+        <div class="container">
+            <h5 class="fw-bold mb-4">Receitas mais populares:</h5>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a href="">
+                    <div class="recipe-card card-populated shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=400" class="recipe-thumb" alt="Bolo de Cenoura">
+                        <p class="card-title-sm">Bolo de Cenoura com Cobertura de Chocolate</p>
+                        <div class="text-warning mb-1" style="font-size: 0.6rem;">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="text-muted ms-1">(33)</span>
+                            
+                            <span class="text-muted">Criado por : </span>
+                            <span style="color: red;"> THIAGO </span>
+                            
+                        </div>
+                        <div class="card-info">
+                            <i class="fa-regular fa-clock me-1"></i> 75 min <i class="fa-solid fa-user-group ms-2 me-1"></i> 12
+                        </div>
                     </div>
-
-                    <div class="input-group flex-1">
-                        <label>Outros (especifique):</label>
-                        <input type="text" placeholder="Digite aqui...">
-                    </div>
+                    </a>
                 </div>
 
-                <div class="login-link">
-                    <a href="login.html">Já tem uma conta? <u>ENTRE AQUI</u></a>
-                </div>  
+                <div class="col-md-4">
+                <a href="">
+                    <div class="recipe-card card-populated shadow-sm">
+                        <img src="imgsRECEITAS/Captura de tela 2026-05-27 160231.png" class="recipe-thumb" alt="Tacos de camarão com creme de abacate">
+                        <p class="card-title-sm">Tacos de camarão com creme de abacate</p>
+                        <div class="text-warning mb-1" style="font-size: 0.6rem;">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="text-muted ms-1">(12)</span>
+                            <span class="text-muted">Criado por:</span>
+                        </div>
+                        <div class="card-info">
+                            <i class="fa-regular fa-clock me-1"></i> 35 min <i class="fa-solid fa-user-group ms-2 me-1"></i> 4
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="">
+                    <div class="recipe-card card-populated shadow-sm"></div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="">
+                    <div class="recipe-card card-populated shadow-sm"></div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="">
+                    <div class="recipe-card card-populated shadow-sm"></div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="">
+                    <div class="recipe-card card-populated shadow-sm"></div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="">
+                    <div class="recipe-card card-populated shadow-sm"></div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="">
+                    <div class="recipe-card card-populated shadow-sm"></div>
+                    </a>
+                </div>
                 
+                <div class="col-md-4">
+                    <a href="">
+                    <div class="recipe-card card-populated shadow-sm"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <button type="submit" class="btn-cadastrar">Cadastrar</button>
-               
-            </form>
-           
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="social-icons">
-            <span>&#120143;</span> <span>&#128247;</span> <span>&#10208;</span> </div>
-        <div class="logo" style="padding-left:850px ;">
-            <img src="img/Captura de tela 2026-05-10 130050.png" alt="CulinariA" class="logo-img" >
-    </div>
+    <footer class="py-5 text-center">
+        <div class="container">
+            <div class="footer-logo mb-4">
+                <img  class="img" src="imgs/Captura de tela 2026-05-10 130050.png" alt="">
+            </div>
+            <p class="fw-bold mb-4">Sobre nós</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
     </footer>
- 
-</body>
-</html>
+
+    <script src="
