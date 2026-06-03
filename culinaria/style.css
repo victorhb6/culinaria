@@ -10,6 +10,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease-in-out, padding-right 0.3s ease-in-out; 
 }
 
 /* Header */
@@ -152,4 +153,80 @@ input, select {
 .logo-footer {
     font-size: 22px;
     font-weight: 800;
+}
+
+
+/* Linha de personalização interface IA */
+
+body {
+    transition: width 0.3s ease-in-out;
+}
+
+.ai-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 12px 24px;
+    background-color: #ff9f43;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease-in-out, right 0.3s ease-in-out; 
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -380px;
+    width: 380px;
+    height: 100vh;
+    background-color: #1f242e;
+    color: white;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    transition: right 0.3s ease-in-out;
+}   
+
+body.sidebar-aberta .sidebar {
+    right: 0;
+}
+
+body.sidebar-aberta .ai-button {
+    right: 400px; 
+}
+
+body.sidebar-aberta {
+    width: calc(100% - 380px);
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #2d3446;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sidebar-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
 }
