@@ -1,8 +1,8 @@
-/* Variáveis de Cores */
+/* Cores */
 :root {
     --primary-gold: #e6b34e;
     --btn-red: #ff5a5f;
-    --bg-light-peach: #fce8da;
+    --bg-light-peach: #ffceab;
     --text-dark: #333333;
 }
 
@@ -11,7 +11,7 @@ body {
     color: var(--text-dark);
 }
 
-/* Header & Navegação */
+/* Header */
 .navbar-brand {
     font-weight: bold;
     color: var(--text-dark);
