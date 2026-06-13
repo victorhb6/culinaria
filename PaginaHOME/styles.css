@@ -161,3 +161,35 @@ body {
 .social-icons i:hover {
     color: var(--primary-gold);
 }
+
+/* ==========================================================================
+   AQUI COMEÇAM AS ADIÇÕES PARA A PÁGINA SOBRE (NADA ANTERIOR FOI MUDADO)
+   ========================================================================== */
+
+.bg-sobre-container {
+    background-color: var(--bg-light-peach); /* Usa a sua cor pêssego padrão */
+    padding: 60px 0;
+}
+
+.card-sobre {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px; /* Mantém o padrão de 8px dos seus recipe-cards */
+    border: 1px solid #dcdcdc; /* Mesma borda padrão dos seus cards */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-sobre h1 {
+    font-weight: bold;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.card-sobre p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--text-dark);
+    margin: 0;
+}
