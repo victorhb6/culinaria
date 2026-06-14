@@ -5,6 +5,13 @@
     --bg-light-peach: #ffc59c;
     --text-dark: #333333;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #cecece;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -84,7 +91,7 @@ body {
 }
 
 .recipe-rating .stars {
-    color: #ffd760; /* Cor amarela das estrelas */
+    color: #ffd760; 
     margin-left: 5px;
 }
 
@@ -112,7 +119,7 @@ body {
     font-weight: 700;
 }
 
-.portions-counter {
+.portions {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -132,9 +139,41 @@ body {
     font-weight: bold;
 }
 
+.ingredients-list li{
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
 /* Blocos de Informação da Direita */
 .info-block {
     margin-bottom: 25px;
+}
+.similar-recipe{
+    padding-left: 20px;
+    padding-top: 120px;
+    margin-bottom: 25px;
+}
+.similar-recipe h4{
+    padding-left:35px;
+}
+.similar-recipe img{
+    width: 130px;
+    height: 80px;
+    border-radius: 4px;    
+}
+.similar-recipe p{
+    font-size: 0.9rem;
+    padding-left: 20px;
+}
+.similar-recipe a{
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+.similar-recipe a:hover{
+    text-decoration: underline;
+    color: #fff;
 }
 
 .block-title {
@@ -150,7 +189,7 @@ body {
 }
 
 .custom-table td {
-    padding: 4px 0 !important; 
+    padding: 4px 0!important; 
     background: transparent !important;
 }
 
@@ -193,6 +232,9 @@ body {
 }
 .footer{
     background-color: #ffffff;
+}
+footer a{
+    color: #000;
 }
 
 .social-icons i {
