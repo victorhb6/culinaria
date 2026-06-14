@@ -145,6 +145,8 @@ body {
     margin-bottom: 12px;
 }
 
+
+
 /* Blocos de Informação da Direita */
 .info-block {
     margin-bottom: 25px;
@@ -199,12 +201,10 @@ body {
 }
 
 /* Ícone ($) */
-.active-cost {
+.active-icone {
+    
     color: #000;
     font-weight: bold;
-}
-.inactive-cost {
-    color: #ccc;
 }
 
 /* Botão Favoritar */
