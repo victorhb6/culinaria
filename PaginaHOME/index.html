@@ -32,6 +32,25 @@
         </div>
     </nav>
 
+    <button id="ai-btn" class="ai-button">IA</button>
+
+    <div id="ai-sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Assistente IA</h3>
+            <button id="close-btn" class="close-button">&times;</button>
+        </div>
+        <div class="sidebar-content">
+            <div id="chat-messages">
+                <div class="message assistant">Olá! No que posso ajudar hoje?</div>
+            </div>
+            
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Pergunte sobre receitas...">
+                <button id="chat-send" class="chat-send-btn">&#10148;</button>
+            </div>
+        </div>
+    </div>
+
     <section class="hero-section d-flex align-items-center">
         <div class="container">
             <div class="row">
@@ -200,7 +219,7 @@
     <footer class="py-5 text-center">
         <div class="container">
             <div class="footer-logo mb-4">
-                <img  class="img" src="imgs/Captura de tela 2026-05-10 130050.png" alt="">
+                <img class="img" src="imgs/Captura de tela 2026-05-10 130050.png" alt="">
             </div>
             
             <a href="sobre.html" style="text-decoration: none; color: inherit;">
@@ -214,5 +233,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

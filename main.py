@@ -2,35 +2,57 @@ import os
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from google import genai
+from groq import Groq
 
-app = FastAPI(title="Minha API com Gemini")
+app = FastAPI(title="CulinarIA - API de Inteligência Artificial")
 
-client = genai.Client(api_key="AIzaSyAAvEFljR6PLoPuY3v-eKS5qrC98auQ9n8")
-
+# Ativa o CORS para permitir que o seu site converse com o servidor Python sem bloqueios
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # Libera para o seu site front-end acessar a API
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Inicializa o cliente buscando a chave de forma segura no sistema (evita bloqueio do GitHub)
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 class PromptRequest(BaseModel):
     pergunta: str
 
 @app.get("/")
 def inicio():
-    return {"status": "API Online", "modelo": "gemini-2.5-flash"}
+    return {"status": "API Online", "provedor": "Groq", "modelo": "llama-3.1-8b-instant"}
 
 @app.post("/perguntar")
-def perguntar_ao_gemini(requisicao: PromptRequest):
+def perguntar_a_ia(requisicao: PromptRequest):
     try:
-        resposta = client.models.generate_content(
-            model='gemini-2.5-flash',
-            contents=requisicao.pergunta
+        # Chamada real de IA com instruções de comportamento (System Prompt)
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {
+                    "role": "system",
+                    "content": (
+                        "Você é o Assistente do CulinarIA, um chef de cozinha profissional, "
+                        "extremamente amigável, prestativo e especialista em gastronomia. "
+                        "Responda OBRIGATORIAMENTE em português do Brasil (pt-BR). "
+                        "Dê dicas práticas sobre culinária, substituição de ingredientes e modos de preparo."
+                    )
+                },
+                {
+                    "role": "user",
+                    "content": requisicao.pergunta,
+                }
+            ],
+            model="llama-3.1-8b-instant",
         )
-        return {"resposta": resposta.text}
+        
+        # Extrai o texto da resposta gerada pela IA
+        texto_resposta = chat_completion.choices[0].message.content
+        return {"resposta": texto_resposta}
         
     except Exception as e:
+        # Se acontecer algum erro na API, ele será impresso no terminal do VS Code
+        print(f"ERRO CRÍTICO NA IA: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
