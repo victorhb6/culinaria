@@ -18,9 +18,7 @@
     display: inline-block; /* Allows elements to sit on the same line */
    /* Adds space to the right of each title */
   }
-  #h2{
-    align-self:flex-end;
-  }
+
 </style>
 </head>
 <body>
@@ -47,12 +45,12 @@
   <main class="container my-4" id="bc">
     <section class="row justify-content-center">
       <div class="col-lg-8" align="left">
-        <h2 class="titulo-secao mb-4 inline-title" style="padding-left: 32px;   margin-right: 21rem;" align="left" >Profile</h2>
+        <h2 class="titulo-secao mb-4 inline-title" style="padding-left: 32px;   margin-right: 22rem;" align="left" >Profile</h2>
          <h2 class="titulo-secao mr-4 inline-title " style="padding-right: 39px;" align="right" id="h2">Meu filtro Alimentar</h2>
         <div align="left" class="ms-5">
 <i class="bi bi-person-circle" style="font-size: 4rem; "   ></i>
         </div>
-
+<div class="button-container2">
     <form class="card-form2 p-4 p-md-3 "  align="left" style="float: none; width: 50%;">
           <div class="mb-4 me-5" >
             <label for="email" class="form-label " align="left">Nome do usuario:</label>
@@ -70,11 +68,41 @@
             <label for="nome" class="form-label ">Senha: </label>
             <input type="password" class="form-control"  id="senha" placeholder="122333">
           </div>
-    
+    <div class="button-container">
           <button type="submit" class="btn-cadastrar ms-5 mr-5 " >Alterar</button>
+          <button type="submit" class="btn-cadastrar ms-5 mr-5  " >editar infromções</button>
+          </div>
         </form>
         </form>
+<form style="display: flex; height: 2rem; ">
+<div class="form-check form-check-inline"  style=" padding-left: 32px;background-color: #f9c108; width:7rem; border-radius: 15px;">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label " for="inlineCheckbox1"  >Lactose</label>
+</div>
+<div class="form-check form-check-inline" style="padding-left: 32px;background-color: #f9c108;border-radius: 15px; width:9rem;">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label " for="inlineCheckbox2">Sem Glutem</label>
+</div>
+<div class="form-check form-check-inline" style="padding-left: 32px;background-color: #f9c108;border-radius: 15px; width:7rem;">
+  <input class="form-check-input"   type="checkbox" id="inlineCheckbox3 " value="option3">
+  <label class="form-check-label "  for="inlineCheckbox3">Vegano</label>
+</div>
 
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 
       </div>
     </section>

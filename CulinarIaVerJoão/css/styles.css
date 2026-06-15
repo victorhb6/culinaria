@@ -109,3 +109,12 @@ body {
   background-color: #FFF5F5;
     
 }
+.button-container {
+  display: flex;       /* Aligns children side by side */
+  gap: 16rem;           /* Controls the spacing between buttons */
+}
+
+.button-container2 {
+  display: flex;       /* Aligns children side by side */
+  gap: 2rem;           /* Controls the spacing between buttons */
+}
