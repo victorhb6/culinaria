@@ -48,7 +48,7 @@ a:hover{
     border: none;
     border-radius: 6px;
 }
-.btn-favorito{
+.btn-favorite1{
     background-color: var(--btn-red);
     color: #000;
     font-weight: bold;
@@ -56,6 +56,67 @@ a:hover{
 }
 .btn-favorite1{
     font-size: 1.4rem; 
+}
+
+.container-favorite {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-favorite1 {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #212529; 
+}
+
+.favorites-dropdown {
+    display: none;               
+    position: absolute;
+    top: 100%;                   
+    right: 0;                    
+    background-color: #ffffff;   
+    min-width: 260px;            
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); 
+    border-radius: 8px;          
+    padding: 15px;
+    z-index: 1000;    
+           
+    border: 1px solid #eee;
+}
+.favorites-dropdown.mostrar {
+    display: block;
+}
+
+.favorites-dropdown h3 {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 5px;
+}
+
+.favorites-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.favorites-dropdown ul li {
+    padding: 8px 0;
+}
+
+.favorites-dropdown ul li a {
+    text-decoration: none;
+    color: #495057;
+    font-size: 0.95rem;
+    display: block;
+}
+
+.favorites-dropdown ul li a:hover {
+    color: #e67e22; 
 }
 
 .btn-entrar {

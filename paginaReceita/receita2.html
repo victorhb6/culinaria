@@ -28,11 +28,26 @@
                 </div>
             </div>
 
-            <div class="mx-4">
-                <button class="btn btn-favorite1 px-3">
+            <div class="container-favorite mx-4">
+                <button class="btn btn-favorite1 px-3" id="btn-favorite-window">
                     <i class="bi bi-heart-fill"></i>
                 </button>
+                <div class="favorites-dropdown" id="favorite-window">
+                    <h3>Minhas Receitas Favoritas</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Sopa de Batata Baroa</a>
+                        </li>
+                        <li>
+                            <a href="#">Bolo de Chocolate</a>
+                        </li>
+                        <li>
+                            <a href="">Peixe Grelhado ao Molho</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
             <div><a href="">
                 <button class="btn btn-entrar px-4 shadow-sm">
                     <i class="bi bi-person-fill me-2"></i> ENTRAR
@@ -209,12 +224,11 @@
                         </table>
                     </section>
 
-                    <div class="d-flex justify-content-center mt-4">
-                        <button class="btn-favorite">
-                            <i class="bi bi-heart me-2"></i> Favoritar
+                     <div class="d-flex justify-content-center mt-4">
+                        <button class="btn-favorite" id="btn-favorite">
+                            <i class="bi bi-heart me-2" id="icone-heart"></i><span id="text-favorite">Favoritar</span>
                         </button>
                     </div>
-
 
                     <section class="similar-recipe-list">
                     <div class="similar-recipe mb-4">
@@ -234,7 +248,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="receita3.html">
                                     <img src="imgsRECEITAS/Peixe Grelhado ao Molho de Ervas com Espinafre.jfif" alt="Peixe Grelhado ao Molho de Ervas com Espinafre">
                                     <p>Peixe Grelhado ao Molho de Ervas com Espinafre</p>
                                 </a>

@@ -63,3 +63,38 @@ btnMais.addEventListener('click', () => {
     porcoesElemento.textContent = porcoes;
     atualizarIngredientes(porcoes);
 });
+
+const botaoFavoritar = document.getElementById('btn-favorite');
+const iconeHeart = document.getElementById('icone-heart'); 
+const textFavorite = document.getElementById('text-favorite');
+
+botaoFavoritar.addEventListener('click', function() {
+    
+    if (iconeHeart.classList.contains('bi-heart')) {
+        iconeHeart.classList.remove('bi-heart');
+        iconeHeart.classList.add('bi-heart-fill');
+        textFavorite.textContent = 'Favoritado';
+    } else {
+        iconeHeart.classList.remove('bi-heart-fill');
+        iconeHeart.classList.add('bi-heart');
+        textFavorite.textContent = 'Favoritar';
+    }
+});
+
+
+
+const btnFavoriteWindow = document.getElementById('btn-favorite-window');
+const favoriteWindow = document.getElementById('favorite-window');
+
+
+btnFavoriteWindow.addEventListener('click', function(event) {
+    event.stopPropagation(); 
+    favoriteWindow.classList.toggle('mostrar');
+});
+
+
+document.addEventListener('click', function(event) {
+    if (!favoriteWindow.contains(event.target) && event.target !== btnFavoriteWindow) {
+        favoriteWindow.classList.remove('mostrar');
+    }
+});
