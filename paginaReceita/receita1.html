@@ -5,19 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CulinarIA - Receita</title>
 
-    
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
     <link rel="stylesheet" href="style.css">
-
-
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
-    <div class="container">
+        <div class="container">
             <a class="navbar-brand" href="#">
                 <img class="img" src="imgs/Captura de tela 2026-05-10 130050.png" alt="Logo CulinarIA">
             </a>
@@ -36,49 +31,24 @@
                 <div class="favorites-dropdown" id="favorite-window">
                     <h3>Minhas Receitas Favoritas</h3>
                     <ul>
-                        <li>
-                            <a href="#">Sopa de Batata Baroa</a>
-                        </li>
-                        <li>
-                            <a href="#">Bolo de Chocolate</a>
-                        </li>
-                        <li>
-                            <a href="">Peixe Grelhado ao Molho</a>
-                        </li>
+                        <li><a href="#">Sopa de Batata Baroa</a></li>
+                        <li><a href="#">Bolo de Chocolate</a></li>
+                        <li><a href="#">Peixe Grelhado ao Molho</a></li>
                     </ul>
                 </div>
             </div>
             
-                <a href="">
+            <a href="">
                 <button class="btn btn-entrar px-4 shadow-sm">
                     <i class="bi bi-person-fill me-2"></i> ENTRAR
                 </button>
-                </a>
-            </div>
+            </a>
         </div>
+    </nav>
 
     <button id="ai-btn" class="ai-button">IA</button>
 
-        <div id="ai-sidebar" class="sidebar">
-        <div class="sidebar-header">
-            <h3>Assistente IA</h3>
-            <button id="close-btn" class="close-button">&times;</button>
-        </div>
-        <div class="sidebar-content">
-            <div id="chat-messages">
-                <div class="message assistant">Olá! No que posso ajudar hoje?</div>
-            </div>
-            
-            <div class="chat-input-container">
-                <input type="text" id="chat-input" placeholder="Pergunte sobre receitas...">
-                <button id="chat-send" class="chat-send-btn">&#10148;</button>
-            </div>
-        </div>
-    </div>
-
-    </nav>
-
-     <div id="ai-sidebar" class="sidebar">
+    <div id="ai-sidebar" class="sidebar">
         <div class="sidebar-header">
             <h3>Assistente IA</h3>
             <button id="close-btn" class="close-button">&times;</button>
@@ -105,7 +75,9 @@
                         
                         <div class="recipe-rating">
                             <span>Avaliações (25):</span>
-                            <span class="stars"><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill"></i></span>
+                            <span class="stars">
+                                <i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill"></i>
+                            </span>
                         </div>
                         
                         <div class="recipe-author">
@@ -113,9 +85,11 @@
                             <span>Feito por: <strong>Peter</strong></span>
                         </div>
                         
-                        <img src="imgsRECEITAS/Gemini_Generated_Image_bkoxskbkoxskbkox.png" alt="Sopa de Batata Baroa (Mandioquinha) com Ragú de Carne" class="img-fluid recipe-image">
+                        <img src="imgsRECEITAS/Gemini_Generated_Image_bkoxskbkoxskbkox.png" alt="Sopa de Batata Baroa" class="img-fluid recipe-image">
                     </div>
+
                     <br><br>
+
                     <div class="portions-section mt-4">
                         <h3>Total de porções:</h3>
                         <div class="portions">
@@ -127,78 +101,71 @@
 
                     <div class="ingredients-section mt-4">
                         <h3 class="block-title"><strong>Ingredientes:</strong></h3>
-                            <ul class="ingredients-list">
-                                <li data-base="200"> <span class="qtd">800</span>g de batata baroa (mandioquinha) descascada e picada</li>
-                                <li data-base="125"> <span class="qtd">500</span>g de carne de panela (músculo ou acém) em cubos pequenos</li>
-                                <li data-base="0.25"><span class="qtd">1</span> cebola média picada</li>
-                                <li data-base="0.75"> <span class="qtd">3</span> dentes de alho picados</li>
-                                <li data-base="100"><span class="qtd">400</span> g de tomates pelados picados (1 lata)</li>
-                                <li data-base="0.50"><span class="qtd">2</span> colheres de sopa de azeite de oliva</li>
-                                <li data-base="0.25"><span class="qtd">1</span> colher de sopa de manteiga</li>
-                                <li data-base="0.25"><span class="qtd">1</span> litro de caldo de legumes (ou água quente)</li>
-                                <li>Sal, pimenta-do-reino e noz-moscada a gosto</li>
-                                <li>Salsa fresca picada a gosto</li>
-                            </ul>   
+                        <ul class="ingredients-list">
+                            <li data-base="200"> <span class="qtd">800</span>g de batata baroa (mandioquinha) descascada e picada</li>
+                            <li data-base="125"> <span class="qtd">500</span>g de carne de panela (músculo ou acém) em cubos pequenos</li>
+                            <li data-base="0.25"><span class="qtd">1</span> cebola média picada</li>
+                            <li data-base="0.75"> <span class="qtd">3</span> dentes de alho picados</li>
+                            <li data-base="100"><span class="qtd">400</span> g de tomates pelados picados (1 lata)</li>
+                            <li data-base="0.50"><span class="qtd">2</span> colheres de sopa de azeite de oliva</li>
+                            <li data-base="0.25"><span class="qtd">1</span> colher de sopa de manteiga</li>
+                            <li data-base="0.25"><span class="qtd">1</span> litro de caldo de legumes (ou água quente)</li>
+                            <li>Sal, pimenta-do-reino e noz-moscada a gosto</li>
+                            <li>Salsa fresca picada a gosto</li>
+                        </ul>   
 
                         <div class="ingredients-section mt-4">
                             <h3 class="block-title"><strong>Passo a Passo:</strong></h3>
-                            
                             <div>
-                                <video src="" controls width="600" controls height="400"></video>
+                                <video src="" controls width="600" height="400"></video>
                             </div>
-
-
                         </div>
+
                         <div class="ingredients-section mt-4">
                             <h4 class="block-title"><strong>1. Preparação dos Vegetais e Carne</strong></h4>
                             <ul>
-                                <li>Batata Baroa: Descasque as batatas baroas e corte-as em rodelas ou cubos médios para facilitar o cozimento</li>
-                                <li>Carne: Certifique-se de que os cubos de carne estejam limpos e cortados em tamanho pequeno e uniforme</li>
+                                <li>Batata Baroa: Descasque as batatas baroas e corte-as em rodelas ou cubos médios.</li>
+                                <li>Carne: Certifique-se de que os cubos de carne estejam limpos e cortados em tamanho pequeno.</li>
                             </ul>
                         </div>
+
                         <div class="ingredients-section mt-4">
                             <h3 class="block-title"><strong>2. Refogar e Cozinhar a Carne (Ragu)</strong></h3>
                             <ul>
-                                <li>Em uma panela de pressão, aqueça o azeite e doure bem os cubos de carne em fogo alto para selar</li>
-                                    <li>Adicione a cebola picada e dois terços do alho, refogando até que fiquem dourados e macios</li>
-                                    <li>Adicione os tomates pelados esmagados, tempere com sal e pimenta-do-reino, e cubra com água quente (cerca de dois dedos acima da carne)</li>
-                                    <li>Tampe a panela e, após pegar pressão, cozinhe em fogo médio por 35 minutos até a carne ficar completamente macia</li>
-                                    <li>Abra a panela após sair a pressão, desfie a carne grosseiramente no próprio molho com dois garfos e deixe apurar até o molho encorpar</li>
+                                <li>Em uma panela de pressão, aqueça o azeite e doure bem os cubos de carne.</li>
+                                <li>Adicione a cebola picada e dois terços do alho, refogando bem.</li>
+                                <li>Adicione os tomates pelados esmagados, tempere com sal/pimenta, e cubra com água quente.</li>
+                                <li>Cozinhe sob pressão por 35 minutos, desfie a carne e deixe o molho apurar.</li>
                             </ul>
                         </div>
+
                         <div class="ingredients-section mt-4">
                             <h4 class="block-title"><strong>3. Criar a Base da Sopa(Creme)</strong></h4>
                             <ul>
-                                <li>Em outra panela, derreta a manteiga e doure o restante do alho picado</li>
-                                <li>Adicione as batatas baroas picadas e o caldo de legumes (ou água quente)</li>
-                                <li>Cozinhe em fogo médio por 15 a 20 minutos ou até que as batatas fiquem bem macias</li>
+                                <li>Em outra panela, derreta a manteiga e doure o restante do alho.</li>
+                                <li>Adicione as batatas baroas picadas e o caldo de legumes.</li>
+                                <li>Cozinhe por 15 a 20 minutos até as batatas ficarem macias.</li>
                             </ul>
                         </div>
+
                         <div class="ingredients-section mt-4">
                             <h4 class="block-title"><strong>4. Adicionar a Cremosidade</strong></h4>
                             <ul>
-                                <li>Desligue o fogo da batata baroa e, utilizando um mixer ou liquidificador, bata tudo até obter um creme liso, aveludado e homogêneo</li>
-                                <li>Volte o creme ao fogo baixo, ajuste o sal e adicione uma pitada de noz-moscada ralada</li>
+                                <li>Bata tudo com um mixer ou no liquidificador até obter um creme liso.</li>
+                                <li>Volte ao fogo baixo, ajuste o sal e ponha noz-moscada.</li>
                             </ul>
-
                         </div>
+
                         <div class="ingredients-section mt-4">
                             <h4 class="block-title"><strong>5. Finalização</strong></h4>
                             <ul>
-                                <li>Deixe o creme cozinhar por mais 5 minutos para ganhar consistência</li>
-                                <li>Se o creme estiver espesso demais, adicione um pouco mais de água quente até atingir o ponto desejado</li>
-                                <li>Dica: Sirva o creme bem quente em tigelas, adicione uma porção generosa do ragu de carne bem no centro e salpique salsa fresca picada por cima</li>
+                                <li>Cozinhe por mais 5 minutos. Adicione o ragu no centro de cada prato ao servir e salpique salsa.</li>
                             </ul>
-
                         </div>
+                    </div> 
+                </div>
 
-                        </div>     
-                    </div>
-
-
-                    
                 <div class="col-lg-6">
-                    
                     <section class="info-block mb-4">
                         <h3 class="block-title">Informações sobre a Receita</h3>
                         <table class="table table-borderless custom-table">
@@ -271,48 +238,44 @@
                         </button>
                     </div>
 
-
-                    <section class="similar-recipe-list">
-                    <div class="similar-recipe mb-4">
-                        <h4 class="bloco-title"><strong>Receitas Semelhantes:</strong></h4>
-                        <br>
-                        <ul class="ingredients-list">
-                            <li>
-                                <a href="receita.html">
-                                <img src="imgsRECEITAS/photo-1547592166-23ac45744acd.jfif" alt="Sopa Cremosa Gourmet com Molho de Carne Moída">
-                                <p>Sopa Cremosa Gourmet com Molho de Carne Moída</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="receita2.html">
-                                    <img src="imgsRECEITAS/Legumes Assados com Ervas e Azeite.jfif" alt="Legumes Assados com Ervas e Azeite">
-                                    <p>Legumes Assados com Ervas e Azeite</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="receita3.html">
-                                    <img src="imgsRECEITAS/Peixe Grelhado ao Molho de Ervas com Espinafre.jfif" alt="Peixe Grelhado ao Molho de Ervas com Espinafre">
-                                    <p>Peixe Grelhado ao Molho de Ervas com Espinafre</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <section class="similar-recipe-list mt-4">
+                        <div class="similar-recipe mb-4">
+                            <h4 class="bloco-title"><strong>Receitas Semelhantes:</strong></h4>
+                            <br>
+                            <ul class="ingredients-list">
+                                <li>
+                                    <a href="receita.html">
+                                        <img src="imgsRECEITAS/photo-1547592166-23ac45744acd.jfif" alt="Sopa Cremosa Gourmet">
+                                        <p>Sopa Cremosa Gourmet com Molho de Carne Moída</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="receita2.html">
+                                        <img src="imgsRECEITAS/Legumes Assados com Ervas e Azeite.jfif" alt="Legumes Assados">
+                                        <p>Legumes Assados com Ervas e Azeite</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="receita3.html">
+                                        <img src="imgsRECEITAS/Peixe Grelhado ao Molho de Ervas com Espinafre.jfif" alt="Peixe Grelhado">
+                                        <p>Peixe Grelhado ao Molho de Ervas com Espinafre</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </section>
-
                 </div>
 
             </div>
         </div>
     </main>
 
-     <footer class="py-5 text-center footer">
+    <footer class="py-5 text-center footer">
         <div class="container">
             <div class="footer-logo mb-4">
-                <img  class="img" src="imgs/Captura de tela 2026-05-10 130050.png" alt="">
+                <img class="img" src="imgs/Captura de tela 2026-05-10 130050.png" alt="Logo Footer">
             </div>
-            <a href="">
-            <p class="fw-bold mb-4">Sobre nós</p>
-            </a>
+            <a href=""><p class="fw-bold mb-4">Sobre nós</p></a>
             <div class="social-icons">
                 <i class="bi bi-twitter-x"></i>
                 <i class="bi bi-instagram"></i>
@@ -321,7 +284,6 @@
         </div>
     </footer>
 
-    <script src="script1.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
