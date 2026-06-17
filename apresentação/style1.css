@@ -1,0 +1,262 @@
+
+:root {
+    --primary-gold: #e6b34e;
+    --btn-red: #ff5a5f;
+    --bg-light-peach: #ffc59c;
+    --text-dark: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light-peach);
+    color: var(--text-dark);
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #cecece;
+}
+
+/* Header */
+.navbar-brand {
+    font-weight: bold;
+    color: var(--text-dark);
+    font-size: 1.8rem;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.img{
+    height: 60px; 
+    width: auto; 
+    display: block;
+    object-fit: contain;
+}
+
+.logo-hat {
+    color: var(--primary-gold);
+}
+
+.search-bar {
+    background-color: #e7e7e7;
+    border: none;
+    border-radius: 6px;
+}
+.btn-favorito{
+    background-color: var(--btn-red);
+    color: #000;
+    font-weight: bold;
+    border: none;
+}
+.btn-favorite1{
+    font-size: 1.4rem; 
+}
+
+.btn-entrar {
+    background-color: var(--primary-gold );
+    color: #000;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-user:hover{
+    color: var(--text-dark);
+}
+
+.btn-favorito:hover{
+    background-color: #db4d52;
+}
+.btn-entrar:hover {
+    background-color: #d4a23d;
+}
+
+/* Container Principal */
+.recipe-detail-container {
+    background-color: var(--bg-peach);
+    min-height: 100vh;
+}
+
+/*Card*/
+.main-recipe-card {
+    background-color: #ffffffc9;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.recipe-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.recipe-rating {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.recipe-rating .stars {
+    color: #ffd760; 
+    margin-left: 5px;
+}
+
+.recipe-author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.author-icon {
+    font-size: 1.5rem;
+}
+
+.recipe-image {
+    border-radius: 8px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Seções de Texto da Esquerda (Porções e Ingredientes) */
+.portions-section h3, .ingredients-section h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.portions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-arrow {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.portion-number {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.ingredients-list li{
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+
+
+/* Blocos da Direita */
+.info-block {
+    margin-bottom: 25px;
+}
+.similar-recipe-list{
+    padding-left:0rem;
+}
+.similar-recipe{
+    padding-left: 20px;
+    padding-top: 120px;
+    margin-bottom: 25px;
+}
+.similar-recipe h4{
+    padding-left:35px;
+}
+.similar-recipe img{
+    width: 130px;
+    height: 80px;
+    border-radius: 4px;    
+}
+.similar-recipe p{
+    font-size: 0.9rem;
+    padding-left: 20px;
+}
+.similar-recipe a{
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+.similar-recipe a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.block-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+/* Customização das Tabelas */
+.custom-table {
+    margin-bottom: 0;
+    font-size: 1.05rem;
+}
+
+.custom-table td {
+    padding: 4px 0!important; 
+    background: transparent !important;
+}
+
+/* Linha invisível */
+.separator-row td {
+    padding: 8px 0 !important;
+}
+
+/* icone ($) */
+.active-icone {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Botão Favoritar */
+.btn-favorite {
+    background-color: var(--btn-red);
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.2s;
+}
+
+.btn-favorite:hover {
+    background-color: #e34a4f;
+}
+/* Footer */
+.footer-logo {
+    height: 50px; 
+    width: auto;
+    display: inline-block; 
+    margin: 0 auto
+}
+.footer{
+    background-color: #ffffff;
+}
+footer a{
+    color: #000;
+}
+
+.social-icons i {
+    font-size: 1.6rem;
+    margin: 0 15px;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.social-icons i:hover {
+    color: var(--primary-gold);
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CulinarIA - Receita</title>
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style1.css">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
+    <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="img" src="imgs/Captura de tela 2026-05-10 130050.png" alt="Logo CulinarIA">
+            </a>
+            
+            <div class="flex-grow-1 mx-4">
+                <div class="input-group">
+                    <span class="input-group-text search-bar"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control search-bar" placeholder="Buscar por...">
+                </div>
+            </div>
+
+            <div class="container-favorite mx-4">
+                <button class="btn btn-favorite1 px-3" id="btn-favorite-window">
+                    <i class="bi bi-heart-fill"></i>
+                </button>
+                <div class="favorites-dropdown" id="favorite-window">
+                    <h3>Minhas Receitas Favoritas</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Sopa de Batata Baroa</a>
+                        </li>
+                        <li>
+                            <a href="#">Bolo de Chocolate</a>
+                        </li>
+                        <li>
+                            <a href="">Peixe Grelhado ao Molho</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div><a href="">
+                <button class="btn btn-entrar px-4 shadow-sm">
+                    <i class="bi bi-person-fill me-2"></i> ENTRAR
+                </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="recipe-detail-container">
+        <div class="container py-5">
+            <div class="row g-5">
+                
+                <div class="col-lg-6">
+                    <div class="main-recipe-card shadow-sm">
+                        <h2 class="recipe-title">Peixe Grelhado ao Molho de Ervas com Espinafre</h2>
+                        
+                        <div class="recipe-rating">
+                            <span>Avaliações (56):</span>
+                            <span class="stars"><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill"></i></span>
+                        </div>
+                        
+                        <div class="recipe-author">
+                            <i class="fa-solid fa-circle-user author-icon"></i>
+                            <span>Feito por: <strong>Monica</strong></span>
+                        </div>
+                        
+                        <img src="imgsRECEITAS/Peixe Grelhado ao Molho de Ervas com Espinafre.jfif" alt="Peixe Grelhado ao Molho de Ervas com Espinafre" class="img-fluid recipe-image">
+                    </div>
+                    <br><br>
+                    <div class="portions-section mt-4">
+                        <h3>Total de porções:</h3>
+                        <div class="portions">
+                            <button class="btn-arrow" id="btn-menos"><i class="bi bi-caret-left-fill"></i></button>
+                            <span class="portion-number sidebar-aberta" id="portion-atual">3</span>
+                            <button class="btn-arrow" id="btn-mais"><i class="bi bi-caret-right-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="ingredients-section mt-4">
+                        <h3 class="block-title"><strong>Ingredientes:</strong></h3>
+                            <ul class="ingredients-list">
+                                <li data-base="1"> <span class="qtd">4</span> filés de peixe branco firme (como tilápia, pescada ou badejo)</li>
+                                <li data-base="0.50"> <span class="qtd">2</span> colheres de sopa de azeite de oliva extra virgem (para o peixe e o molho)</li>
+                                <li> Suco de 1 limão médio</li>
+                                <li> 1 dente de alho picado (para o peixe)</li>
+                            </ul>
+
+                            <h3 class="block-title"><strong>Para o Molho de Ervas</strong></h3>
+                            <ul class="ingredients-list">
+                                <li data-base="0.75"> <span class="qtd">3</span> colheres de sopa de ervas frescas picadas (salsinha, cebolinha e manjericão)</li>
+                                <li data-base="0.25"><span class="qtd">1</span> dente de alho bem picadinho</li>
+                                <li data-base="0.25"><span class="qtd">1</span> colher de sopa de azeite de oliva</li>
+                                <li> Raspas da casca de 1 limão</li>
+                                <li>Sal e pimenta-do-reino a gosto</li>
+                           </ul> 
+
+                           <h2 class="block-title"><strong>Para o Acompanhamento de Espinafre</strong></h2>
+                           <ul class="ingredients-list">
+                            <li> 1 maço de espinafre fresco (somente as folhas limpas)</li>
+                            <li data-base="0.25">1 dente de alho amassado</li>  
+                            <li data-base="0.25"> <span class="qtd">1</span> colher de chá de azeite de oliva</li>
+                            <li> Sal a gosto</li>
+                           </ul>
+  
+
+                        <div class="ingredients-section mt-4">
+                            <h3 class="block-title"><strong>Passo a Passo:</strong></h3>
+                            
+                            <div>
+                                <video src="" controls width="600" controls height="400"></video>
+                            </div>
+
+
+                        </div>
+                        <div class="ingredients-section mt-4">
+                            <h4 class="block-title"><strong>1. Marinar o Peixe</strong></h4>
+                            <ul>
+                                <li>Tempero: Tempere os filés de peixe com o suco de limão, 1 dente de alho picado, sal e pimenta-do-reino a gosto</li>
+                                <li>Descanso: Deixe marinar na geladeira por cerca de 10 a 15 minutos para pegar o sabor</li>
+                            </ul>
+                        </div>
+                        <div class="ingredients-section mt-4">
+                            <h3 class="block-title"><strong>2. Preparar o Molho de Ervas</strong></h3>
+                            <ul>
+                                <li>Em uma tigela pequena, misture bem as ervas frescas picadas (salsinha, cebolinha, manjericão), as raspas de limão, o dente de alho bem picadinho e 1 colher de sopa de azeite</li>
+                                <li>Tempere com uma pitada de sal e pimenta-do-reino. Reserve</li>
+                            </ul>
+                        </div>
+                        <div class="ingredients-section mt-4">
+                            <h4 class="block-title"><strong>3. Grelhar o Peixe</strong></h4>
+                            <ul>
+                                <li>Aqueça uma frigideira antiaderente grande em fogo médio-alto com 1 colher de sopa de azeite</li>
+                                <li>Coloque os filés de peixe (com cuidado para não quebrar) e grelhe por cerca de 3 a 4 minutos de cada lado, ou até que fiquem dourados e cozidos por dentro. Retire e reserve aquecido</li>
+                            </ul>
+                        </div>
+                        <div class="ingredients-section mt-4">
+                            <h4 class="block-title"><strong>4. Refogar o Espinafre</strong></h4>
+                            <ul>
+                                <li>Na mesma frigideira (para aproveitar o sabor do peixe), adicione 1 colher de chá de azeite e doure o alho amassado</li>
+                                <li>Adicione as folhas de espinafre limpas e mexa em fogo médio até que murchem (isso leva apenas 2 a 3 minutos). Tempere com uma pitada de sal e desligue o fogo imediatamente</li>
+                            </ul>
+
+                        </div>
+                        <div class="ingredients-section mt-4">
+                            <h4 class="block-title"><strong>5. Finalização</strong></h4>
+                            <ul>
+                                <li>Monte os pratos colocando uma porção do espinafre refogado como base</li>
+                                <li>Disponha o filé de peixe grelhado por cima do espinafre</li>
+                                <li>Regue o peixe generosamente com o molho de ervas reservado e sirva em seguida</li>
+                            </ul>
+
+                        </div>
+
+                        </div>     
+                    </div>
+
+
+                    
+                <div class="col-lg-6">
+                    
+                    <section class="info-block mb-4">
+                        <h3 class="block-title">Informações sobre a Receita</h3>
+                        <table class="table table-borderless custom-table">
+                            <tr>
+                                <td><strong>Tempo Total:</strong></td>
+                                <td class="text-end">30 min <i class="fa-regular fa-clock"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Preparo:</td>
+                                <td class="text-end">15 min <i class="fa-regular fa-clock"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Cozimento:</td>
+                                <td class="text-end">15 min <i class="fa-regular fa-clock"></i></td>
+                            </tr>
+                            <tr class="separator-row"><td colspan="2"></td></tr>
+                            <tr>
+                                <td><strong>Custo médio:</strong></td>
+                                <td class="cost-icons text-end">
+                                    <span class="active-icone">$ $</span><span class="text-muted"> $</span>
+                                </td>
+                            </tr>
+                            <tr class="separator-row"><td colspan="2"></td></tr>
+                            <tr>
+                                <td><strong>Nível:</strong></td>
+                                <td class="text-end">Fácil <i class="bi bi-cup-hot ms-1"></i><i class="bi bi-cup-hot ms-1 text-muted"></i><i class="bi bi-cup-hot text-muted ms-1"></i></td>
+                            </tr>
+                        </table>
+                    </section>
+
+                    <section class="info-block mb-4">
+                        <h3 class="block-title">Valores Nutricionais por Porção</h3>
+                        <table class="table table-borderless custom-table">
+                            <tr>
+                                <td>Proteínas:</td>
+                                <td class="text-end"><strong>26g</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Gorduras:</td>
+                                <td class="text-end"><strong>9g</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Carboidratos:</td>
+                                <td class="text-end"><strong>3g</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Calorias:</td>
+                                <td class="text-end"><strong>205 kcal</strong> <i class="bi bi-egg-fried ms-1"></i></td>
+                            </tr>
+                        </table>
+                    </section>
+
+                    <section class="info-block mb-4">
+                        <h3 class="block-title">Importante para sua Dieta</h3>
+                        <table class="table table-borderless custom-table">
+                            <tr>
+                                <td><strong>Glúten:</strong></td>
+                                <td class="text-end"><strong>Sem glúten</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Carboidratos:</strong></td>
+                                <td class="text-end"><strong>Baixo carboidrato</strong></td>
+                            </tr>
+                        </table>
+                    </section>
+
+                    <div class="d-flex justify-content-center mt-4">
+                        <button class="btn-favorite" id="btn-favorite">
+                            <i class="bi bi-heart me-2" id="icone-heart"></i><span id="text-favorite">Favoritar</span>
+                        </button>
+                    </div>
+
+
+                    <section class="similar-recipe-list">
+                    <div class="similar-recipe mb-4">
+                        <h4 class="bloco-title"><strong>Receitas Semelhantes:</strong></h4>
+                        <br>
+                        <ul class="ingredients-list">
+                            <li>
+                                <a href="receita.html">
+                                <img src="imgsRECEITAS/photo-1547592166-23ac45744acd.jfif" alt="Sopa Cremosa Gourmet com Molho de Carne Moída">
+                                <p>Sopa Cremosa Gourmet com Molho de Carne Moída</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="receita1.html">
+                                    <img src="imgsRECEITAS/Gemini_Generated_Image_bkoxskbkoxskbkox.png" alt="Sopa de Batata Baroa (Mandioquinha) com Ragú de Carne">
+                                    <p>Sopa de Batata Baroa (Mandioquinha) com Ragú de Carne</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="receita2.html">
+                                    <img src="imgsRECEITAS/Legumes-Assados-com-Ervas-e-Azeite.png" alt="Legumes Assados com Ervas e Azeite">
+                                    <p>Legumes Assados com Ervas e Azeite</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    </section>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+     <footer class="py-5 text-center footer">
+        <div class="container">
+            <div class="footer-logo mb-4">
+                <img  class="img" src="imgs/Captura de tela 2026-05-10 130050.png" alt="">
+            </div>
+            <a href="">
+            <p class="fw-bold mb-4">Sobre nós</p>
+            </a>
+            <div class="social-icons">
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
