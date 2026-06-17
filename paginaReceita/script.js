@@ -58,3 +58,105 @@ chatSend.addEventListener('click', sendMessage);
 chatInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') sendMessage();
 });
+
+
+const btnMenos = document.getElementById('btn-menos');
+const btnMais = document.getElementById('btn-mais');
+const porcoesElemento = document.getElementById('portion-atual');
+const ingredientes = document.querySelectorAll('.ingredients-list li[data-base]');
+
+
+function converterParaFracao(numero) {
+    
+    if (numero % 1 === 0) {
+        return numero;
+    }
+
+    const parteInteira = Math.floor(numero);
+    const decimal = parseFloat((numero % 1).toFixed(2)); 
+
+    let fracao = "";
+
+   
+    if (decimal === 0.25) fracao = "1/4";
+    else if (decimal === 0.33 || decimal === 0.3) fracao = "1/3";
+    else if (decimal === 0.5) fracao = "1/2";
+    else if (decimal === 0.75) fracao = "3/4";
+    else {
+        
+        return numero.toFixed(1);
+    }
+
+    
+    if (parteInteira > 0) {
+        return `${parteInteira} ${fracao}`;
+    }
+
+    return fracao;
+}
+
+function atualizarIngredientes(novasPorcoes) {
+    ingredientes.forEach(item => {
+        const valorBase = parseFloat(item.getAttribute('data-base'));
+        const novaQuantidade = valorBase * novasPorcoes;
+        
+        const qtdElemento = item.querySelector('.qtd');
+        if (qtdElemento) {
+            
+            qtdElemento.textContent = converterParaFracao(novaQuantidade);
+        }
+    });
+}
+
+
+btnMenos.addEventListener('click', () => {
+    let porcoes = parseInt(porcoesElemento.textContent);
+    if (porcoes > 1) {
+        porcoes--;
+        porcoesElemento.textContent = porcoes;
+        atualizarIngredientes(porcoes);
+    }
+});
+
+
+btnMais.addEventListener('click', () => {
+    let porcoes = parseInt(porcoesElemento.textContent);
+    porcoes++;
+    porcoesElemento.textContent = porcoes;
+    atualizarIngredientes(porcoes);
+});
+
+const botaoFavoritar = document.getElementById('btn-favorite');
+const iconeHeart = document.getElementById('icone-heart'); 
+const textFavorite = document.getElementById('text-favorite');
+
+botaoFavoritar.addEventListener('click', function() {
+    
+    if (iconeHeart.classList.contains('bi-heart')) {
+        iconeHeart.classList.remove('bi-heart');
+        iconeHeart.classList.add('bi-heart-fill');
+        textFavorite.textContent = 'Favoritado';
+    } else {
+        iconeHeart.classList.remove('bi-heart-fill');
+        iconeHeart.classList.add('bi-heart');
+        textFavorite.textContent = 'Favoritar';
+    }
+});
+
+
+
+const btnFavoriteWindow = document.getElementById('btn-favorite-window');
+const favoriteWindow = document.getElementById('favorite-window');
+
+
+btnFavoriteWindow.addEventListener('click', function(event) {
+    event.stopPropagation(); 
+    favoriteWindow.classList.toggle('mostrar');
+});
+
+
+document.addEventListener('click', function(event) {
+    if (!favoriteWindow.contains(event.target) && event.target !== btnFavoriteWindow) {
+        favoriteWindow.classList.remove('mostrar');
+    }
+});
