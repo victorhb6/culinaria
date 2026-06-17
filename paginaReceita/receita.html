@@ -42,25 +42,6 @@
         </div>
     </nav>
 
-    <button id="ai-btn" class="ai-button">IA</button>
-
-    <div id="ai-sidebar" class="sidebar">
-        <div class="sidebar-header">
-            <h3>Assistente IA</h3>
-            <button id="close-btn" class="close-button">&times;</button>
-        </div>
-        <div class="sidebar-content">
-            <div id="chat-messages">
-                <div class="message assistant">Olá! No que posso ajudar hoje?</div>
-            </div>
-            
-            <div class="chat-input-container">
-                <input type="text" id="chat-input" placeholder="Pergunte sobre receitas...">
-                <button id="chat-send" class="chat-send-btn">&#10148;</button>
-            </div>
-        </div>
-    </div>
-
     <main class="recipe-detail-container">
         <div class="container py-5">
             <div class="row g-5">
@@ -85,24 +66,24 @@
                     <div class="portions-section mt-4">
                         <h3>Total de porções:</h3>
                         <div class="portions">
-                            <button class="btn-arrow"><i class="bi bi-caret-left-fill"></i></button>
-                            <span class="portion-number">2</span>
-                            <button class="btn-arrow"><i class="bi bi-caret-right-fill"></i></button>
+                            <button class="btn-arrow" id="btn-menos"><i class="bi bi-caret-left-fill"></i></button>
+                            <span class="portion-number sidebar-aberta" id="portion-atual">2</span>
+                            <button class="btn-arrow" id="btn-mais"><i class="bi bi-caret-right-fill"></i></button>
                         </div>
                     </div>
 
-                    <div class="ingredients-section mt-4">
-                        <h3 class="block-title"><strong>Ingredientes:</strong></h3>
-                            <ul class="ingredients-list">
-                                <li>1 cebola roxa</li>
-                                <li>1 colher de sopa de óleo de girassol</li>
-                                <li>200 g de carne moída (bovina)</li>
-                                <li>400 g de tomates picados (em lata)</li>
-                                <li>50 ml de creme de leite culinário (15% de gordura)</li>
-                                <li>170 g de cogumelos em conserva (peso drenado)</li>
-                                <li>50 g de queijo processado (tipo fundido/cremoso)</li>
-                                <li>Sal e pimenta a gosto</li>
-                            </ul>   
+                   <div class="ingredients-section mt-4">
+                    <h3 class="block-title"><strong>Ingredientes:</strong></h3>
+                        <ul class="ingredients-list">
+                            <li data-base="0.25"><span class="qtd">1</span> cebola roxa</li>
+                            <li data-base="0.25"><span class="qtd">1</span> colher de sopa de óleo de girassol</li>
+                            <li data-base="50"><span class="qtd">200</span> g de carne moída (bovina)</li>
+                            <li data-base="100"><span class="qtd">400</span> g de tomates picados (em lata)</li>
+                            <li data-base="12.5"><span class="qtd">50</span> ml de creme de leite culinário (15% de gordura)</li>
+                            <li data-base="42.5"><span class="qtd">170</span> g de cogumelos em conserva (peso drenado)</li>
+                            <li data-base="12.5"><span class="qtd">50</span> g de queijo processado (tipo fundido/cremoso)</li>
+                            <li>Sal e pimenta a gosto</li>
+                        </ul> 
 
                         <div class="ingredients-section mt-4">
                             <h3 class="block-title"><strong>Passo a Passo:</strong></h3>
@@ -234,18 +215,19 @@
                         </button>
                     </div>
 
+                    <section class="similar-recipe-list">
                     <div class="similar-recipe mb-4">
                         <h4 class="bloco-title"><strong>Receitas Semelhantes:</strong></h4>
                         <br>
                         <ul class="ingredients-list">
                             <li>
-                                <a href="">
+                                <a href="receita1.html">
                                 <img src="imgsRECEITAS/Gemini_Generated_Image_bkoxskbkoxskbkox.png" alt="Sopa de Batata Baroa (Mandioquinha) com Ragú de Carne">
                                 <p>Sopa de Batata Baroa (Mandioquinha) com Ragú de Carne</p>
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="receita2.html">
                                     <img src="imgsRECEITAS/Legumes Assados com Ervas e Azeite.jfif" alt="Legumes Assados com Ervas e Azeite">
                                     <p>Legumes Assados com Ervas e Azeite</p>
                                 </a>
@@ -258,7 +240,7 @@
                             </li>
                         </ul>
                     </div>
-
+                </section>
 
                 </div>
 
@@ -282,6 +264,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script1.js"></script>
 </body>
+
 </html>

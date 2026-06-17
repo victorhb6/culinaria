@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="style.css">
 
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
@@ -66,23 +67,23 @@
                     <div class="portions-section mt-4">
                         <h3>Total de porções:</h3>
                         <div class="portions">
-                            <button class="btn-arrow"><i class="bi bi-caret-left-fill"></i></button>
-                            <span class="portion-number">4</span>
-                            <button class="btn-arrow"><i class="bi bi-caret-right-fill"></i></button>
+                            <button class="btn-arrow" id="btn-menos"><i class="bi bi-caret-left-fill"></i></button>
+                            <span class="portion-number sidebar-aberta" id="portion-atual">4</span>
+                            <button class="btn-arrow" id="btn-mais"><i class="bi bi-caret-right-fill"></i></button>
                         </div>
                     </div>
 
                     <div class="ingredients-section mt-4">
                         <h3 class="block-title"><strong>Ingredientes:</strong></h3>
                             <ul class="ingredients-list">
-                                <li>800 g de batata baroa (mandioquinha) descascada e picada</li>
-                                <li>500 g de carne de panela (músculo ou acém) em cubos pequenos</li>
-                                <li>1 cebola média picada</li>
-                                <li>3 dentes de alho picados</li>
-                                <li>400 g de tomates pelados picados (1 lata)</li>
-                                <li>2 colheres de sopa de azeite de oliva</li>
-                                <li>1 colher de sopa de manteiga</li>
-                                <li>1 litro de caldo de legumes (ou água quente)</li>
+                                <li data-base="200"> <span class="qtd">800</span>g de batata baroa (mandioquinha) descascada e picada</li>
+                                <li data-base="125"> <span class="qtd">500</span>g de carne de panela (músculo ou acém) em cubos pequenos</li>
+                                <li data-base="0.25"><span class="qtd">1</span> cebola média picada</li>
+                                <li data-base="0.75"> <span class="qtd">3</span> dentes de alho picados</li>
+                                <li data-base="100"><span class="qtd">400</span> g de tomates pelados picados (1 lata)</li>
+                                <li data-base="0.50"><span class="qtd">2</span> colheres de sopa de azeite de oliva</li>
+                                <li data-base="0.25"><span class="qtd">1</span> colher de sopa de manteiga</li>
+                                <li data-base="0.25"><span class="qtd">1</span> litro de caldo de legumes (ou água quente)</li>
                                 <li>Sal, pimenta-do-reino e noz-moscada a gosto</li>
                                 <li>Salsa fresca picada a gosto</li>
                             </ul>   
@@ -91,7 +92,7 @@
                             <h3 class="block-title"><strong>Passo a Passo:</strong></h3>
                             
                             <div>
-                                <video src="videos/download.mp4" controls width="600" controls height="400"></video>
+                                <video src="" controls width="600" controls height="400"></video>
                             </div>
 
 
@@ -218,6 +219,8 @@
                         </button>
                     </div>
 
+
+                    <section class="similar-recipe-list">
                     <div class="similar-recipe mb-4">
                         <h4 class="bloco-title"><strong>Receitas Semelhantes:</strong></h4>
                         <br>
@@ -229,7 +232,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="receita2.html">
                                     <img src="imgsRECEITAS/Legumes Assados com Ervas e Azeite.jfif" alt="Legumes Assados com Ervas e Azeite">
                                     <p>Legumes Assados com Ervas e Azeite</p>
                                 </a>
@@ -242,7 +245,7 @@
                             </li>
                         </ul>
                     </div>
-
+                    </section>
 
                 </div>
 
@@ -265,6 +268,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script1.js"></script>
 </body>
 
 </html>

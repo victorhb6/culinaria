@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CulinarIA - Receita</title>
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
+    <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="img" src="imgs/Captura de tela 2026-05-10 130050.png" alt="Logo CulinarIA">
+            </a>
+            
+            <div class="flex-grow-1 mx-4">
+                <div class="input-group">
+                    <span class="input-group-text search-bar"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control search-bar" placeholder="Buscar por...">
+                </div>
+            </div>
+
+            <div class="mx-4">
+                <button class="btn btn-favorite1 px-3">
+                    <i class="bi bi-heart-fill"></i>
+                </button>
+            </div>
+            <div><a href="">
+                <button class="btn btn-entrar px-4 shadow-sm">
+                    <i class="bi bi-person-fill me-2"></i> ENTRAR
+                </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="recipe-detail-container">
+        <div class="container py-5">
+            <div class="row g-5">
+                
+                <div class="col-lg-6">
+                    <div class="main-recipe-card shadow-sm">
+                        <h2 class="recipe-title">Legumes Assados com Ervas e Azeite</h2>
+                        
+                        <div class="recipe-rating">
+                            <span>Avaliações (32):</span>
+                            <span class="stars"><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill me-2"></i><i class="bi bi-star-fill"></i></span>
+                        </div>
+                        
+                        <div class="recipe-author">
+                            <i class="fa-solid fa-circle-user author-icon"></i>
+                            <span>Feito por: <strong>Maria</strong></span>
+                        </div>
+                        
+                        <img src="imgsRECEITAS/Legumes-Assados-com-Ervas-e-Azeite.png" alt="Legumes Assados com Ervas e Azeite" class="img-fluid recipe-image">
+                    </div>
+                    <br><br>
+                    <div class="portions-section mt-4">
+                        <h3>Total de porções:</h3>
+                        <div class="portions">
+                            <button class="btn-arrow" id="btn-menos"><i class="bi bi-caret-left-fill"></i></button>
+                            <span class="portion-number sidebar-aberta" id="portion-atual">4</span>
+                            <button class="btn-arrow" id="btn-mais"><i class="bi bi-caret-right-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="ingredients-section mt-4">
+                        <h3 class="block-title"><strong>Ingredientes:</strong></h3>
+                            <ul class="ingredients-list">
+                                <li data-base="0.5"><span class="qtd">2</span> abobrinhas médias cortadas em rodelas ou cubos</li>
+                                <li data-base="0.5"><span class="qtd">2</span> cenouras médias descascadas e cortadas em palitos (ou rodelas)</li>
+                                <li data-base="0.25"><span class="qtd">1</span> pimentão vermelho cortado em tiras ou cubos grandes</li>
+                                <li data-base="0.25"><span class="qtd">1</span> pimentão amarelo cortado em tiras ou cubos grandes</li>
+                                <li data-base="0.25"><span class="qtd">1</span> cebola roxa grande cortada em pétalas</li>
+                                <li data-base="50"><span class="qtd">200</span> g de tomate-cereja inteiros</li>
+                                <li data-base="0.75"><span class="qtd">3</span> colheres de sopa de azeite de oliva extra virgem</li>
+                                <li data-base="0.5"><span class="qtd">2</span> dentes de alho picados (ou amassados)</li>
+                                <li data-base="0.25"><span class="qtd">1</span> colher de sopa de ervas secas (alecrim, tomilho e orégano)</li>
+                                <li>Sal e pimenta-do-reino moída na hora a gosto</li>
+                            </ul>
+
+                        <div class="ingredients-section mt-4">
+                            <h3 class="block-title"><strong>Passo a Passo:</strong></h3>
+                            
+                            <div>
+                                <video src="" controls width="600" controls height="400"></video>
+                            </div>
+
+
+                        </div>
+                        <div class="ingredients-section mt-4">
+                            <h4 class="block-title"><strong>1. Preparação dos Vegetais</strong></h4>
+                            <ul>
+                                <li>Higienização: Lave bem todos os legumes em água corrente e seque-os antes de cortar</li>
+                                <li>Corte: Corte a abobrinha, as cenouras, os pimentões e a cebola roxa. Tente manter pedaços de tamanhos parecidos para que todos assem por igual. Deixe os tomates-cereja inteiros</li>
+                            </ul>
+                        </div>
+                        <div class="ingredients-section mt-4">
+                            <h3 class="block-title"><strong>2. Temperar os Legumes</strong></h3>
+                            <ul>
+                                <li>Em uma tigela grande, adicione todos os legumes cortados e os tomates-cereja</li>
+                                    <li>Junte o alho picado e espalhe as ervas secas (alecrim, tomilho e orégano) por cima</li>
+                                    <li>Tempere com sal e pimenta-do-reino a gosto</li>
+                            </ul>
+                        </div>
+                        <div class="ingredients-section mt-4">
+                            <h4 class="block-title"><strong>3. Incorporar o Azeite</strong></h4>
+                            <ul>
+                                <li>Regue todos os legumes com as 3 colheres de sopa de azeite de oliva</li>
+                                <li>Misture tudo muito bem com as mãos ou com duas colheres, garantindo que todos os pedaços fiquem bem envolvidos pelo azeite e pelos temperos</li>
+                            </ul>
+                        </div>
+                        <div class="ingredients-section mt-4">
+                            <h4 class="block-title"><strong>4. Organizar na Assadeira</strong></h4>
+                            <ul>
+                                <li>Preaqueça o forno a 200°C por 10 minutos</li>
+                                <li>Distribua os legumes em uma assadeira grande. Dica importante: Não amontoe os legumes; deixe espaço entre eles para que assem e fiquem dourados em vez de cozinharem no próprio vapor</li>
+                            </ul>
+
+                        </div>
+                        <div class="ingredients-section mt-4">
+                            <h4 class="block-title"><strong>5. Finalização e Tempo de Forno</strong></h4>
+                            <ul>
+                                <li>Leve a assadeira ao forno por cerca de 30 a 35 minutos</li>
+                                <li>Na metade do tempo (por volta dos 15 minutos), abra o forno com cuidado e misture levemente os legumes com uma espátula para que dourem de todos os lados</li>
+                                <li>Retire do forno quando os legumes estiverem macios por dentro e com as bordinhas levemente tostadas/douradas. Sirva quente ou em temperatura ambiente</li>
+                            </ul>
+
+                        </div>
+
+                        </div>     
+                    </div>
+
+
+                    
+                <div class="col-lg-6">
+                    
+                    <section class="info-block mb-4">
+                        <h3 class="block-title">Informações sobre a Receita</h3>
+                        <table class="table table-borderless custom-table">
+                            <tr>
+                                <td><strong>Tempo Total:</strong></td>
+                                <td class="text-end">45 min <i class="fa-regular fa-clock"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Preparo:</td>
+                                <td class="text-end">15 min <i class="fa-regular fa-clock"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Cozimento:</td>
+                                <td class="text-end">30 min <i class="fa-regular fa-clock"></i></td>
+                            </tr>
+                            <tr class="separator-row"><td colspan="2"></td></tr>
+                            <tr>
+                                <td><strong>Custo médio:</strong></td>
+                                <td class="cost-icons text-end">
+                                    <span class="active-icone">$</span><span class="text-muted"> $ $</span>
+                                </td>
+                            </tr>
+                            <tr class="separator-row"><td colspan="2"></td></tr>
+                            <tr>
+                                <td><strong>Nível:</strong></td>
+                                <td class="text-end">Fácil <i class="bi bi-cup-hot ms-1"></i><i class="bi bi-cup-hot text-muted ms-1"></i><i class="bi bi-cup-hot text-muted ms-1"></i></td>
+                            </tr>
+                        </table>
+                    </section>
+
+                    <section class="info-block mb-4">
+                        <h3 class="block-title">Valores Nutricionais por Porção</h3>
+                        <table class="table table-borderless custom-table">
+                            <tr>
+                                <td>Proteínas:</td>
+                                <td class="text-end"><strong>3g</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Gorduras:</td>
+                                <td class="text-end"><strong>8g</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Carboidratos:</td>
+                                <td class="text-end"><strong>14g</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Calorias:</td>
+                                <td class="text-end"><strong>135 kcal</strong> <i class="bi bi-egg-fried ms-1"></i></td>
+                            </tr>
+                        </table>
+                    </section>
+
+                    <section class="info-block mb-4">
+                        <h3 class="block-title">Importante para sua Dieta</h3>
+                        <table class="table table-borderless custom-table">
+                            <tr>
+                                <td><strong>Glúten:</strong></td>
+                                <td class="text-end"><strong>Sem glúten</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Carboidratos:</strong></td>
+                                <td class="text-end"><strong>Baixo carboidrato</strong></td>
+                            </tr>
+                        </table>
+                    </section>
+
+                    <div class="d-flex justify-content-center mt-4">
+                        <button class="btn-favorite">
+                            <i class="bi bi-heart me-2"></i> Favoritar
+                        </button>
+                    </div>
+
+
+                    <section class="similar-recipe-list">
+                    <div class="similar-recipe mb-4">
+                        <h4 class="bloco-title"><strong>Receitas Semelhantes:</strong></h4>
+                        <br>
+                        <ul class="ingredients-list">
+                            <li>
+                                <a href="receita.html">
+                                <img src="imgsRECEITAS/photo-1547592166-23ac45744acd.jfif" alt="Sopa Cremosa Gourmet com Molho de Carne Moída">
+                                <p>Sopa Cremosa Gourmet com Molho de Carne Moída</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="receita1.html">
+                                    <img src="imgsRECEITAS/Gemini_Generated_Image_bkoxskbkoxskbkox.png" alt="Sopa de Batata Baroa (Mandioquinha) com Ragú de Carne">
+                                    <p>Sopa de Batata Baroa (Mandioquinha) com Ragú de Carne</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="imgsRECEITAS/Peixe Grelhado ao Molho de Ervas com Espinafre.jfif" alt="Peixe Grelhado ao Molho de Ervas com Espinafre">
+                                    <p>Peixe Grelhado ao Molho de Ervas com Espinafre</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    </section>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+     <footer class="py-5 text-center footer">
+        <div class="container">
+            <div class="footer-logo mb-4">
+                <img  class="img" src="imgs/Captura de tela 2026-05-10 130050.png" alt="">
+            </div>
+            <a href="">
+            <p class="fw-bold mb-4">Sobre nós</p>
+            </a>
+            <div class="social-icons">
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
